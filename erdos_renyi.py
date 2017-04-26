@@ -38,6 +38,7 @@ def erdos_renyi_gnk(n, k):
     edges += 1
 
   degrees, average = common.node_degree(graph)
+  common.write_pajek('er', graph, n, average)
   print 'average degree: ', average 
 
 
